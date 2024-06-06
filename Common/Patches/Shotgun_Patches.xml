@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_PumpShotgun" or defName="Gun_ChainShotgun"]/verbs/li/verbClass</xpath>
+    <value>
+      <verbClass>AthenaFramework.Verb_ShootAngularShotgun</verbClass>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/verbs/li/defaultProjectile</xpath>
+    <value>
+      <defaultProjectile>BBLK_Shotgun_Pellet</defaultProjectile>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]</xpath>
+    <value>
+      <li Class="AthenaFramework.AngularShotgunExtension">
+        <pelletCount>6</pelletCount>
+        <pelletAngle>3</pelletAngle>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/verbs/li/defaultProjectile</xpath>
+    <value>
+      <defaultProjectile>BBLK_Shotgun_Pellet</defaultProjectile>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]</xpath>
+    <value>
+      <li Class="AthenaFramework.AngularShotgunExtension">
+        <pelletCount>6</pelletCount>
+        <pelletAngle>3</pelletAngle>
+      </li>
+    </value>
+  </Operation>
+
+</Patch>

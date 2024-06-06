@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Athena Shotgun Patch</name>
+  <author>BBLKepling</author>
+  <supportedVersions>
+    <li>1.4</li>
+    <li>1.5</li>
+  </supportedVersions>
+  <packageId>bblkepling.athena.shotgunpatch</packageId>
+  <description>Patches vanilla and modded shotguns to use the Angle Based Shotgun code from Athena Framework.</description>
+  <modDependencies>
+    <li>
+      <packageId>smartkar.athenaframework</packageId>
+      <displayName>Athena Framework</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2903359518</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <incompatibleWith>
+    <li>CETeam.CombatExtended</li>
+    <li>jelly.ProperShotguns</li>
+  </incompatibleWith>
+</ModMetaData>
